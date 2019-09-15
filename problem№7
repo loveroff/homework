@@ -1,13 +1,12 @@
-List<long> primeNumbers = new List<long>() { 2 };
-for (long i = 3; i < long.MaxValue; i += 2)
-{
-    if(!primeNumbers.Any(p => (i % p) == 0))
-    {
-        primeNumbers.Add(i);
-        if (primeNumbers.Count == 10001)
-        {
-            Console.WriteLine(i);
-            break;
-        }
-    }
-}
+a = 1
+b = 1
+while c < 10002:
+	a = a + 1
+	found = True
+	for c in range(2,a+1):
+		if a % c == 0 and c != a:
+			found = False
+			break
+	if found == True:
+		b = b + 1
+print(a)
