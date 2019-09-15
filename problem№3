@@ -1,0 +1,10 @@
+number = 600851475143
+p = 2
+while(number != 1):
+    if(number % p == 0):
+        while(number % p == 0):
+            number = number / p
+    else:
+        p = p + 1
+        
+print(p)
